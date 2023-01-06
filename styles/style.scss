@@ -1,0 +1,348 @@
+.formContainer {
+  background-color: #55AF9F;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .connectButton {
+    background-color: white;
+    color: #55AF9F;
+    padding: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .connectButton:hover {
+    color: green;
+    border-radius: 25px;
+  }
+
+  .formWrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    height: 60%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo {
+      color: #55AF9F;
+      font-size: 24px;
+    }
+
+    .title {
+      color: #55AF9F;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 80%;
+
+      input {
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        width: 100%;
+        border-bottom: 1px solid #55AF9F;
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+
+      button {
+        background-color: #55AF9F;
+        margin-top: 20px;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #8da4f1;
+        font-size: 12px;
+        cursor: pointer;
+
+        img {
+          width: 32px;
+        }
+      }
+    }
+    p {
+      color: #55AF9F;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .register_login{
+      font-weight: bold;
+    }
+    .register_login:hover {
+      color: green;
+    }
+  }
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+
+    .sidebar {
+      flex: 1;
+      background-color: #8FCCC0;
+      position: relative;
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #337064;
+        height: 50px;
+        padding: 10px;
+        justify-content: space-between;
+        color: white;
+
+        .logo {
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        .user {
+          display: flex;
+          gap: 10px;
+
+          button {
+            background-color: white;
+            color: #337064;
+            padding: 10px 10px 10px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+          button:hover{
+            background-color: #E3F2EF;
+          }
+        }
+      }
+      .search {
+        border-bottom: 3px solid #E3F2EF;
+
+        .searchForm {
+          padding: 20px;
+          padding-left: 8px;
+          padding-right: 10px;
+          padding-top: 10px;
+
+          input {
+            padding-top: 10px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 18px;
+            outline: none;
+            width: 70%;
+
+            &::placeholder {
+              color: white;
+            }
+          }
+          button {
+            background-color: #337064;
+            color: white;
+            float: right;
+            padding: 10px;
+            width: 80px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+          button:hover{
+            background-color: #408C7B;
+          }
+        }
+      }
+
+      .userChat {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #337064;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .userChatInfo {
+          span {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 14px;
+            color: lightgray;
+          }
+        }
+      }
+    }
+    .chat {
+      flex: 2;
+
+      .chatInfo {
+        height: 50px;
+        background-color: #337064;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px;
+        color: white;
+        border-left: 1px solid #E3F2EF;
+      }
+
+      .chatIcons {
+        display: flex;
+        gap: 10px;
+
+        img {
+          height: 24px;
+          cursor: pointer;
+        }
+      }
+
+      .messages {
+        background-color: #E3F2EF;
+        padding: 10px;
+        height: calc(100% - 100px);
+        overflow: scroll;
+
+        .message {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+
+          .messageInfo {
+            display: flex;
+            flex-direction: column;
+            color: gray;
+            font-weight: 300;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .messageContent {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+              background-color: white;
+              padding: 10px 20px;
+              border-radius: 0px 10px 10px 10px;
+              max-width: max-content;
+            }
+
+            img {
+              width: 50%;
+            }
+          }
+
+          &.owner {
+            flex-direction: row-reverse;
+
+            .messageContent {
+              align-items: flex-end;
+              p {
+                background-color: #337064;
+                color: white;
+                border-radius: 10px 0px 10px 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .input {
+        height: 50px;
+        background-color: #337064;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          color: white;
+          background-color: #337064;
+          font-size: 18px;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        .send {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          button {
+            background-color: white;
+            padding: 8px 5px 5px 8px;
+            width: 60px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+          button:hover{
+            background-color: #E3F2EF;
+          }
+        }
+      }
+    }
+  }
+}
