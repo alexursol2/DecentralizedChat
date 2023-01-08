@@ -19,7 +19,7 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">DApp Chat</span>
+        <span className="logo">Decentralized Messenger</span>
         <span className="title">Registration</span>
         <form onSubmit={registerUser}>
           <input
