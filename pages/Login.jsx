@@ -25,7 +25,7 @@ const Login = () => {
       ) : (
         <div className="formContainer">
           <div className="formWrapper">
-            <span className="logo">DApp Chat</span>
+            <span className="logo">Decentralized Messenger</span>
             <span className="title">Login</span>
             <form onSubmit={loginUser}>
               <input
