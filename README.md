@@ -1,3 +1,5 @@
+You can go to this website https://decentralized-chat2.vercel.app/ or do these steps
+
 First, install Metamask and choose Goerli testnet:
 
 Second, install neccessary package:
